@@ -1,5 +1,6 @@
 git clone https://github.com/plokhotnyuk/jsoniter-scala.git
 cd jsoniter-scala
+git checkout gh-pages
 for benchmark in $(cat corretto-11.json | grep benchmark | tr -d "\"," | awk '{print $3}')
 do
 	echo "Analysing $benchmark"
